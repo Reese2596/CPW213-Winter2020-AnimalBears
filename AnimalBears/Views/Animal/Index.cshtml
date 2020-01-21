@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewData["Title"] = "Stuffed Animal Form";
+}
+
+<h1>Create Animal</h1>
+
+@if(ViewData["Message"]!= null)
+{
+    <h2 class="alert alert-success">@ViewData["Message"]</h2>
+}
+else
+{
+<form method="post">
+    <label for="animal-name">Type of Animal</label>
+    <input required type="text" name="animal-name" id="animal-name" value="" />
+    <span>*</span>
+    <br />
+
+    <label for="name">Animal's Name</label>
+    <input required type="text" name="name" id="name" value="" />
+    <span>*</span>
+    <br />
+
+    <label for="color">Color of Animal</label>
+    <input required type="text" name="color" id="color" value="" />
+    <span>*</span>
+    <br />
+
+    <input type="submit" value="Create Animal" 
+           class="btn btn-primary"/>
+</form>
+}
+
