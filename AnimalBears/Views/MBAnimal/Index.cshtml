@@ -1,0 +1,23 @@
+﻿@model AnimalBears.Models.Animal
+@{
+    ViewData["Title"] = "Add MBAnimal";
+}
+
+<h1>MB Create Animal</h1>
+
+<form method="post">
+    <label asp-for="Name"></label>
+    <input asp-for="Name" />
+    <span asp-validation-for="Name"></span><br />
+
+    <label asp-for="AnimalName"></label>
+    <input asp-for="AnimalName" />
+    <span asp-validation-for="AnimalName"></span><br />
+
+    <label asp-for="Color"></label>
+    <input asp-for="Color" />
+    <span asp-validation-for="Color"></span><br />
+
+    <input type="submit" value="Create Animal" />
+</form>
+
